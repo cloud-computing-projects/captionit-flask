@@ -19,7 +19,6 @@ packaging==23.2
 Pillow==10.1.0
 pycurl==7.43.0.6
 PySimpleSOAP==1.16.2
-python-apt==2.2.1
 python-debian==0.1.39
 python-debianbts==3.1.0
 PyYAML==6.0.1
