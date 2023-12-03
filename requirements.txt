@@ -23,7 +23,6 @@ python-debian==0.1.39
 python-debianbts==3.1.0
 PyYAML==6.0.1
 regex==2023.10.3
-reportbug==7.10.3+deb11u1
 requests==2.25.1
 safetensors==0.4.1
 six==1.16.0
