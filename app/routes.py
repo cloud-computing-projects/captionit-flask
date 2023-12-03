@@ -29,6 +29,7 @@ def index():
         print(temp_image_path)
         # 
         msg = captioning(temp_image_path)
+        msg = msg[0]['generated_text']
         os.remove(temp_image_path)
 
         # If the user does not select a file, the browser submits an empty file without a filename
@@ -36,8 +37,11 @@ def index():
             return render_template('index.html', message='No selected file')
 
         # You can process the image as needed here (e.g., save it to a folder or a database)
-        # For simplicity, we'll just print the filename
         print(f"Received image: {msg}")
-        return render_template('index.html',message=msg)
+        return render_template('generate.html',message=msg)
 
+    return render_template('index.html')
+
+@app.route('/generate', methods=['GET', 'POST'])
+def generate():
     return render_template('index.html')
